@@ -1,14 +1,9 @@
 import './global.css'
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Struct
-        </p>
-      </header>
-    </div>
+    <Home/>
   );
 }
 
