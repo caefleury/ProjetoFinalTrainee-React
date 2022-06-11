@@ -10,14 +10,14 @@ export const Container = styled.div`
     .home__container{
         background-image: url(${sky});
         background-size: cover;
-        height: 1000px;
+        height: 62.5rem;
         display: flex;
         align-items: center;
         flex-direction: column;
         color: white;
     }
     .text__container{
-        margin-top:100px;
+        margin-top:6.25rem;
     }
     .title__foguetinho{
         position:relative;
@@ -31,11 +31,11 @@ export const Container = styled.div`
     }
     .subtitle{
         font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 41px;
-        width: 676px;
-        height: 87px;
+        font-weight: 18.75rem;
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        width: 42.25rem;
+        height: 5.375rem;
         position: absolute;
         margin:0;
         margin-left: 4rem;
@@ -44,7 +44,7 @@ export const Container = styled.div`
     .title{
         position: relative;
         font-weight: 400;
-        font-size: 400px;
+        font-size: 25rem;
         background: linear-gradient(180deg, #2DA2FF 0%, rgba(45, 162, 255, 0.388666) 60.57%, rgba(45, 162, 255, 0) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -55,7 +55,7 @@ export const Container = styled.div`
         .title{
             position: relative;
             font-weight: 400;
-            font-size: 200px;
+            font-size: 12.5rem;
             background: linear-gradient(180deg, #2DA2FF 0%, rgba(45, 162, 255, 0.388666) 60.57%, rgba(45, 162, 255, 0) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -64,7 +64,7 @@ export const Container = styled.div`
         }
         #foguetinho__img{
             height: auto;
-            width: 150px;
+            width: 9.375rem;
             position: absolute;
             left: 78.15%;
             top: 60.99%;
@@ -72,10 +72,10 @@ export const Container = styled.div`
         .subtitle{
             font-style: normal;
             font-weight: 300;
-            font-size: 20px;
-            line-height: 41px;
-            width: 450px;
-            height: 87px;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
+            width: 28.125rem;
+            height: 5.438rem;
             position: absolute;
             margin:0;
             margin-left: 4rem;
