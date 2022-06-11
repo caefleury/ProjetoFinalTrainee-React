@@ -1,9 +1,13 @@
-import './global.css'
-import Home from './components/Home';
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalStyle } from './global';
+import MyRoutes from './routes';
 
 function App() {
   return (
-    <Home/>
+    <BrowserRouter>
+      <GlobalStyle/>
+      <MyRoutes/>
+    </BrowserRouter>
   );
 }
 
