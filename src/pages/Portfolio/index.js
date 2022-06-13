@@ -1,8 +1,12 @@
 import Home from '../../components/Home';
+import Navbar from '../../components/Navbar';
 
 const Portfolio = () => {
     return(
-        <Home/>
+        <>
+            <Navbar/>
+            <Home/>
+        </>
     );
 }
 
