@@ -3,7 +3,7 @@ import sky from '../../assets/sky.png'
 
 export const Container = styled.div`
     font-family: 'Nunito', sans-serif;
-    height: 210.875rem;
+    height: 1000px;
     margin: 0;
     padding: 0;
     z-index:2;

@@ -51,6 +51,8 @@ export const Container = styled.div`
     }
     #navbar__btn{
         color: #111827;
+        font-weight:600;
+        font-size:18px;
     }
     .arrow__img{
         height: auto;
