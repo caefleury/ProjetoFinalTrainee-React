@@ -6,6 +6,7 @@ export const Container = styled.div`
     height: 210.875rem;
     margin: 0;
     padding: 0;
+    z-index:2;
     }
     .home__container{
         background-image: url(${sky});

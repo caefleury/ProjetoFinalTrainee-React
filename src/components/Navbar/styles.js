@@ -3,13 +3,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     font-family: 'Nunito', sans-serif;
-    background: rgb(5,0,20);
     color: white;
-    margin: 0;
-    width: 100%;
+    width:100%;
     position: fixed;
     top: 0;
-    z-index:1
+    z-index:2;
+    backdrop-filter: blur(4px);
     .logo{
         height: 42px;
         font-style: normal;
