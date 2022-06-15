@@ -14,7 +14,7 @@ const Footer = () => {
                 <img id="struct__logo" src={logo} alt="logo" />
                 <div className="socials__container">
                     <p>
-                        Copyright © 2022 | Created by Foguete não dá ré
+                        Copyright © 2022 | Created by Foguete não dá ré 
                     </p>
                     <div className="footer__links">
                         <img className="struct__social__link" id="linkedin" src={linkedin} alt="linkedin" />

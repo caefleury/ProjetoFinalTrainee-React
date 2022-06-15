@@ -10,7 +10,6 @@ export const Container = styled.div`{
         background-color: #3D90FE;
         background-size: cover;
         width:100%;
-        position: "fixed"
     }
     #struct__logo{
         width:auto;

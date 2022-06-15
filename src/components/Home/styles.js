@@ -25,7 +25,7 @@ export const Container = styled.div`
     }
     #foguetinho__img{
         height: auto;
-        width: 300px;
+        width: 280px;
         position: absolute;
         left: 78.15%;
         top: 60.99%;
@@ -33,7 +33,7 @@ export const Container = styled.div`
     .subtitle{
         font-style: normal;
         font-weight: 18.75rem;
-        font-size: 1.875rem;
+        font-size: 1.75rem;
         line-height: 2.5rem;
         width: 42.25rem;
         height: 5.375rem;
@@ -45,7 +45,7 @@ export const Container = styled.div`
     .title{
         position: relative;
         font-weight: 400;
-        font-size: 25rem;
+        font-size: 24rem;
         background: linear-gradient(180deg, #2DA2FF 0%, rgba(45, 162, 255, 0.388666) 60.57%, rgba(45, 162, 255, 0) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

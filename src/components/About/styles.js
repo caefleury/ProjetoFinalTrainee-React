@@ -18,9 +18,9 @@ export const Container = styled.div`{
     .text__container1{
         font-style: normal;
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 2.5rem;
-        width: 59.375rem;
+        width: 55.375rem;
         text-align: justify;
     }
     .sobre__container{
@@ -39,7 +39,7 @@ export const Container = styled.div`{
     .subtitle{
         font-style: normal;
         font-weight: 200;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 2.063rem;
     }
     .somos__container{
@@ -50,7 +50,7 @@ export const Container = styled.div`{
     .text__container2{
         font-style: normal;
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 2.5rem;
         width: 50rem;
         text-align: justify;
