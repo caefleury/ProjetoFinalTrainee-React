@@ -32,7 +32,7 @@ const Services = () =>{
                     <div className="rectangle"></div>
                     <div className="text__container">
                         <h2>Sistemas Web</h2>
-                        <p className="text__content">Seu sistema acessível de qualquer lugar.</p>
+                        <p className="text__content"><span className="orange">Seu sistema acessível de qualquer lugar.</span></p>
                     </div>
                     <img id='garotabalanco__img' src={garotabalanco} alt='garotonopc'/>
                 </div>

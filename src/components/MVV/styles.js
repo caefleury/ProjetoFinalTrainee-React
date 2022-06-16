@@ -51,4 +51,16 @@ li{
 .missao__container { grid-area: 1 / 1 / 2 / 2; }
 .visao__container { grid-area: 2 / 1 / 3 / 2; }
 .valores__container { grid-area: 1 / 2 / 3 / 3; }
+@media screen and (max-width: 1200px){
+    .mvv__container {
+        display: grid;
+        justify-content:center;
+        align-items:center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 160px;
+        grid-row-gap: 58px;
+    }
+}
 `

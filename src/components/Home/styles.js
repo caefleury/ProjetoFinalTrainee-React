@@ -52,11 +52,16 @@ export const Container = styled.div`
         margin: 0;
         padding: 0;
     }
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 1200px){
+        height: 650px;
+        .home__container{
+            height: 42.5rem;
+        }
+        
         .title{
             position: relative;
             font-weight: 400;
-            font-size: 12.5rem;
+            font-size: 16rem;
             background: linear-gradient(180deg, #2DA2FF 0%, rgba(45, 162, 255, 0.388666) 60.57%, rgba(45, 162, 255, 0) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

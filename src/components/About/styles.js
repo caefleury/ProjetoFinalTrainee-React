@@ -55,5 +55,38 @@ export const Container = styled.div`{
         width: 50rem;
         text-align: justify;
     }
-
+    @media screen and (max-width: 1200px){
+        .title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 4.8rem;
+            line-height: 7rem;
+        }
+        .subtitle{
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1.2rem;
+            line-height: 2.063rem;
+        }
+        .text__container1{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            width: 45rem;
+            text-align: justify;
+        }
+        .text__container2{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            width: 44rem;
+            text-align: justify;
+        }
+        #avatar{
+            height: auto;
+            width: 24rem;
+        }
+    }
 }`
