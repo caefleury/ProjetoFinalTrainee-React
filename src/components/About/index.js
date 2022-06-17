@@ -5,12 +5,12 @@ const About = () => {
     const struct = "{ Struct }"
     return(
         <Container>
-            <div class="sobre__container">
-                <div class="title__container">
-                    <p class="subtitle">Sobre a</p>
-                    <h1 class="title">{struct}</h1>
+            <div className="sobre__container">
+                <div className="title__container">
+                    <p className="subtitle">Sobre a</p>
+                    <h1 className="title">{struct}</h1>
                 </div>
-                <p class="text__container1">
+                <p className="text__container1">
                     Struct é uma Empresa Júnior inserida em ambiente universitário e com
                     base no curso de Engenharia de Computação da UnB. Nossa equipe é
                     composta por desenvolvedores capacitados, em formação acadêmica de
@@ -25,8 +25,8 @@ const About = () => {
                     o objetivo de entregar produtos atuais e com elevada qualidade.
                 </p>
             </div>
-                <div class="somos__container">
-                <p class="text__container2">
+                <div className="somos__container">
+                <p className="text__container2">
                     Somos a {struct}, empresa junior de Engenharia de Computação da UnB! Mas
                     o que é uma empresa junior?
                     <br />

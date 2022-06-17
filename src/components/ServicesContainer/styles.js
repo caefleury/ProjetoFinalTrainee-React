@@ -35,7 +35,7 @@ padding-top:100px;
 .services__container {
     position:relative;
     display: grid;
-    grid-template-columns: repeat(2, 431px [col-start]);
+    grid-template-columns: repeat(2, 450px [col-start]);
     grid-template-rows: repeat(2, 250px [row-start]);
     grid-column-gap: 230px;
     grid-row-gap: 120px;  

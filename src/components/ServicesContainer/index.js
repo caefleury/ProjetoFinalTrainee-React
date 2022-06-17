@@ -3,7 +3,7 @@ import garotabalanco from '../../assets/garotabalanco.png'
 import garotopc from '../../assets/garotopc.png'
 import garotabike from '../../assets/garotabike.png'
 
-const Services = () =>{
+const ServicesContainer = () =>{
     return(
         <Container>
             
@@ -41,4 +41,4 @@ const Services = () =>{
     )
 }
 
-export default Services
+export default ServicesContainer

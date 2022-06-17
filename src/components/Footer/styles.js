@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Container = styled.div`{
     footer{
+        margin-top:50px;
         font-weight: 400;
         display: flex;
         align-items:center;
@@ -10,6 +11,7 @@ export const Container = styled.div`{
         background-color: #3D90FE;
         background-size: cover;
         width:100%;
+        position: sticky;
     }
     #struct__logo{
         width:auto;

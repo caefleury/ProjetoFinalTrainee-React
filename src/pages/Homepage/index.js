@@ -1,7 +1,7 @@
 import Home from '../../components/Home';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Services from '../../components/Services';
+import ServicesContainer from '../../components/ServicesContainer';
 import PartnersContainer from '../../components/PartnersContainer';
 
 const Homepage = () =>{
@@ -9,7 +9,7 @@ const Homepage = () =>{
         <>
             <Navbar/>
             <Home/>
-            <Services/>
+            <ServicesContainer/>
             <PartnersContainer/>
             <Footer/>
         </>

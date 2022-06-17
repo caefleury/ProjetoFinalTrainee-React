@@ -8,22 +8,22 @@ const Navbar = () => {
     return(
         //<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Stockio - Flaticon</a>-->
         <Container>
-            <nav class="navbar__container">
-                <Link class="logo" to="/">{struct}</Link>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <Link to="/" class="navbar__link">Home</Link>
+            <nav className="navbar__container">
+                <Link className="logo" to="/">{struct}</Link>
+                <ul className="navbar__menu">
+                    <li className="navbar__item">
+                        <Link to="/" className="navbar__link">Home</Link>
                     </li>
-                    <li class="navbar__item">
-                        <Link to="/portfolio" class="navbar__link">Portfolio</Link>
+                    <li className="navbar__item">
+                        <Link to="/portfolio" className="navbar__link">Portfolio</Link>
                     </li>
-                    <li class="navbar__item">
-                        <Link to="/sobre" class="navbar__link">Sobre</Link>
+                    <li className="navbar__item">
+                        <Link to="/sobre" className="navbar__link">Sobre</Link>
                     </li>
                 </ul>
-                <div class="navbar__btn__container">
+                <div className="navbar__btn__container">
                     <Link to="/contato" id="navbar__btn">CONTATO</Link>
-                    <img class='arrow__img' src={rightarrow} alt='rightarrow'/>
+                    <img className='arrow__img' src={rightarrow} alt='rightarrow'/>
                 </div>
                 </nav>    
         </Container>
