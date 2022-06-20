@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 font-family: 'Nunito', sans-serif;
-height: 62.5rem;
+height: 54.5rem;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -18,7 +18,7 @@ padding-top:100px;
 .title{
     font-style: normal;
     font-weight: 600;
-    font-size: 68px;
+    font-size: 64px;
     line-height: 100px;
     margin: 0px;
     padding: 0px;
@@ -37,7 +37,7 @@ padding-top:100px;
     display: grid;
     grid-template-columns: repeat(2, 450px [col-start]);
     grid-template-rows: repeat(2, 250px [row-start]);
-    grid-column-gap: 230px;
+    grid-column-gap: 250px;
     grid-row-gap: 120px;  
 }
     
