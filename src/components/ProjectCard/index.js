@@ -2,7 +2,7 @@ import {Container} from './styles.js'
 import { photo } from '../../services/photo.js'
 import ProjectMemberCard from '../ProjectMemberCard/index.js'
 
-const ProjectCard = ({image_url,name,project_description,link,projects,membersInProject}) =>{
+const ProjectCard = ({image_url,name,project_description,link,membersInProject}) =>{
     // arrumar link da imagem!
     return(
         <Container>
@@ -13,7 +13,7 @@ const ProjectCard = ({image_url,name,project_description,link,projects,membersIn
                         <p className='description'>{project_description}</p>
                     </div>
                     <div className="project__image__container" >
-                        <img className='project__photo' src={image_url ? photo.defaults.baseURL + image_url : `htttps://source.unsplash.com/random?book`} alt='Imagem do Projeto'/>
+                        <img className='project__photo' href={link}src={image_url ? photo.defaults.baseURL + image_url : `htttps://source.unsplash.com/random?book`} alt='Imagem do Projeto'/>
                     </div>
                 </div>
             </div>

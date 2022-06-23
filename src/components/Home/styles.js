@@ -88,4 +88,26 @@ export const Container = styled.div`
             
         }
     }
+    @media screen and (max-width: 800px){
+        .home__container{
+            background-image: url(${sky});
+            background-size: cover;
+            height: 62.5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+        .title{
+            position: relative;
+            font-weight: 400;
+            font-size: 14rem;
+            background: linear-gradient(180deg, #2DA2FF 0%, rgba(45, 162, 255, 0.388666) 60.57%, rgba(45, 162, 255, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
 `

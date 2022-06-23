@@ -1,15 +1,12 @@
 import ProjectCard from '../ProjectCard/index.js'
-import {Container} from './styles.js'
+import {Swiper, SwiperSlide} from 'swiper/react'
 
 const ProjectContainer = ({projects}) => {
-    
+
     return(
-        <Container>
-            {projects.map((item,index)=>(
-                <ProjectCard projects={projects} key={index} name={item.name} image_url={item.photo_url} 
-                    project_description={item.description} project_link={item.link} membersInProject={item.membersInProject}/>
-            ))} 
-        </Container>
+        <Swiper id='main'
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}>{slides}</Swiper>
     )
 };
 

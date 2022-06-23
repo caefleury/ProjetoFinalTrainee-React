@@ -34,6 +34,7 @@ margin:160px 0 260px 0;
     font-weight: 400;
     font-size: 24px;
     line-height: 44px;
+    margin:0;
 }
 .text__container{
     display:flex;
@@ -53,9 +54,23 @@ margin:160px 0 260px 0;
 .members__title{
     font-style: normal;
     font-weight: 600;
-    font-size: 2.4rem;
+    font-size: 2rem;
     color:#54BBFE;
     text-align: center;
     margin-top:80px;
+}
+@media screen and (max-width: 1200px){
+    .title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        color:#54BBFE;
+    }
+    .description{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        margin:0;
+    }
 }
 `
