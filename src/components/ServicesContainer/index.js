@@ -10,7 +10,7 @@ const ServicesContainer = () =>{
             <div className="services__container">
                 <div className="title__container">
                     <p className="subtitle">Nossos</p>
-                    <p className="title">{"{ Serviços }"}</p>
+                    <span className="blue__braces">{"{ "}</span><span className="title">Serviços</span><span className="blue__braces">{" }"}</span>
                 </div>
                 <div className="service_container" id="websites__container">
                     <div className="rectangle"></div>

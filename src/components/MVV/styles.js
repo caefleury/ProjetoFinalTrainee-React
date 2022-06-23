@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`{
-height:1000px;
+height:900px;
 color:white;
 font-family: 'Nunito', sans-serif;
 display:flex;

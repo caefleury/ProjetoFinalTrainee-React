@@ -18,10 +18,17 @@ padding-top:100px;
 .title{
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 68px;
     line-height: 100px;
     margin: 0px;
     padding: 0px;
+}
+.blue__braces{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 7.313rem;
+    color:#2690FD;
 }
 .subtitle{
     font-style: normal;
@@ -37,7 +44,7 @@ padding-top:100px;
     display: grid;
     grid-template-columns: repeat(2, 450px [col-start]);
     grid-template-rows: repeat(2, 250px [row-start]);
-    grid-column-gap: 250px;
+    grid-column-gap: 245px;
     grid-row-gap: 120px;  
 }
     

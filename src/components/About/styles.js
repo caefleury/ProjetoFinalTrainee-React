@@ -6,11 +6,12 @@ export const Container = styled.div`{
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    gap: 6.25rem;
+    gap: 2.25rem;
     height: 1274px;
     width: 100%;;
     margin-top: 6.25rem;
     }
+    
     #avatar{
         height: auto;
         width: 26rem;
@@ -33,8 +34,15 @@ export const Container = styled.div`{
     .title{
         font-style: normal;
         font-weight: 600;
-        font-size: 5.375rem;
+        font-size: 5rem;
         line-height: 7.313rem;
+    }
+    .blue__braces{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 5.5rem;
+        line-height: 7.313rem;
+        color:#2690FD;
     }
     .subtitle{
         font-style: normal;

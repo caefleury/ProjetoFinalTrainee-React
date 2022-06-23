@@ -7,7 +7,7 @@ const PartnersContainer = ({partners}) => {
             <div className='partners__container'>
                 <div className="title__container">
                     <p className="subtitle">Nossos</p>
-                    <p className="title">{"{ Parceiros }"}</p>
+                    <span className="blue__braces">{"{ "}</span><span className="title">Parceiros</span><span className="blue__braces">{" }"}</span>
                 </div>
                 <div className='partners__content'>
                     {partners.map((item,index)=>(

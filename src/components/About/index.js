@@ -8,7 +8,7 @@ const About = () => {
             <div className="sobre__container">
                 <div className="title__container">
                     <p className="subtitle">Sobre a</p>
-                    <h1 className="title">{struct}</h1>
+                    <span className="blue__braces">{"{ "}</span><span className="title">Struct</span><span className="blue__braces">{" }"}</span>
                 </div>
                 <p className="text__container1">
                     Struct é uma Empresa Júnior inserida em ambiente universitário e com

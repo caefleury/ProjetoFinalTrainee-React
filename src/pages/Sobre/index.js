@@ -5,6 +5,7 @@ import MVV from '../../components/MVV';
 import Navbar from '../../components/Navbar';
 import {useState, useEffect} from 'react'
 import { api } from '../../services/api';
+import Stats from '../../components/Stats';
 
 const Sobre = () => {
     
@@ -25,6 +26,7 @@ const Sobre = () => {
             {console.log(members)}
             <Navbar/>
             <About/>
+            <Stats/>
             <MVV/>
             <MembersContainer members={members}/>
             <Footer/>

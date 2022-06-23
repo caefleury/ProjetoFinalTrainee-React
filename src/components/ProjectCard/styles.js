@@ -41,9 +41,9 @@ margin:160px 0 260px 0;
     margin-left:40px;
 }
 .project__photo{
-    height:auto;
-    width:400px;
-    margin-right:20px;
+    height:400px;
+    max-width:auto;
+    margin-right:30px;
 }
 .projectmembers__container{
     display:flex;

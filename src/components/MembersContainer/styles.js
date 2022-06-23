@@ -5,6 +5,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+margin-top:100px;
 .title{
     font-style: normal;
     font-weight: 600;

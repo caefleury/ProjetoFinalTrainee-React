@@ -12,9 +12,9 @@ const ProjectCard = ({image_url,name,project_description,link,projects,membersIn
                         <p className='title'>{name}</p>
                         <p className='description'>{project_description}</p>
                     </div>
-                    <a className="project__image__container" href={link} target="_blank" rel="noreferrer">
+                    <div className="project__image__container" >
                         <img className='project__photo' src={image_url ? photo.defaults.baseURL + image_url : `htttps://source.unsplash.com/random?book`} alt='Imagem do Projeto'/>
-                    </a>
+                    </div>
                 </div>
             </div>
             <p className='members__title'>Membros</p>
