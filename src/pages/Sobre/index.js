@@ -23,7 +23,6 @@ const Sobre = () => {
 
     return(
         <>
-            {console.log(members)}
             <Navbar/>
             <About/>
             <Stats/>

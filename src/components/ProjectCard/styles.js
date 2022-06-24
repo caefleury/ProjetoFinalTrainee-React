@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-height:800px;
+height:1300px;
 color:white;
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-margin:160px 0 260px 0;
+margin-top:300px;
 .project__container{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    margin-bottom:300px;
 }
 .project__content{
     display:flex;
@@ -50,6 +51,7 @@ margin:160px 0 260px 0;
     display:flex;
     justify-content:space-evenly;
     flex-wrap:wrap;
+    margin-bottom:300px;
 }
 .members__title{
     font-style: normal;

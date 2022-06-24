@@ -16,7 +16,6 @@ const Homepage = () =>{
 
     return(
         <>
-            {console.log(partners)}
             <Navbar/>
             <Home/>
             <ServicesContainer/>
