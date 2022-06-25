@@ -1,8 +1,9 @@
 import {Container} from './styles.js'
 import { photo } from '../../services/photo.js'
 import ProjectMemberCard from '../ProjectMemberCard/index.js'
+import { Link } from 'react-router-dom';
 
-const ProjectCard = ({image_url,name,project_description,link,membersInProject}) =>{
+const ProjectCard = ({image_url,name,project_description,link,membersInProject,project_url}) =>{
     // arrumar link da imagem!
     return(
         <Container>
@@ -13,7 +14,9 @@ const ProjectCard = ({image_url,name,project_description,link,membersInProject})
                         <p className='description'>{project_description}</p>
                     </div>
                     <div className="project__image__container" >
-                        <img className='project__photo'src={image_url ? photo.defaults.baseURL + image_url : `htttps://source.unsplash.com/random?book`} alt='Imagem do Projeto'/>
+                        <a href={project_url}>
+                            <img className='project__photo'src={image_url ? photo.defaults.baseURL + image_url : `htttps://source.unsplash.com/random?book`} alt='Imagem do Projeto'/>
+                        </a>
                     </div>
                 </div>
             </div>
