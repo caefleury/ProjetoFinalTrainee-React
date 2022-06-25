@@ -1,8 +1,6 @@
 import About from '../../components/About';
-import Footer from '../../components/Footer';
 import MembersContainer from '../../components/MembersContainer';
 import MVV from '../../components/MVV';
-import Navbar from '../../components/Navbar';
 import {useState, useEffect} from 'react'
 import { api } from '../../services/api';
 import Stats from '../../components/Stats';
@@ -23,12 +21,10 @@ const Sobre = () => {
 
     return(
         <>
-            <Navbar/>
             <About/>
             <Stats/>
             <MVV/>
             <MembersContainer members={members}/>
-            <Footer/>
         </>
     );
 }
