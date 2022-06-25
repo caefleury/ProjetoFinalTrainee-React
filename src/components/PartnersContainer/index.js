@@ -3,7 +3,7 @@ import {Container} from './styles.js'
 
 const PartnersContainer = ({partners}) => {
     return(
-        <Container>
+        <Container id="PartnerPage">
             <div className='partners__container'>
                 <div className="title__container">
                     <p className="subtitle">Nossos</p>

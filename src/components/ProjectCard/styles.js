@@ -46,6 +46,9 @@ margin-top:300px;
     height:400px;
     max-width:auto;
     margin-right:30px;
+    :hover{
+        transform: scale(1.1);
+    }
 }
 .projectmembers__container{
     display:flex;

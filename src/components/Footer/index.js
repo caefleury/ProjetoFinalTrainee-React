@@ -17,9 +17,8 @@ const Footer = () => {
                         Copyright © 2022 | Created by Foguete não dá ré 
                     </p>
                     <div className="footer__links">
-                        <a href="https://www.instagram.com/a.desa_/"> <img className="struct__social__link" id="linkedin" src={linkedin} alt="linkedin" /> </a>
-                        <a href= "https://www.instagram.com/a.desa_/"> <img className="struct__social__link" id="instagram" src={instagram} alt="instagram" /> </a>
-                        <a href="https://www.instagram.com/a.desa_/"> <img className="struct__social__link" id="facebook" src={facebook} alt="facebook" /> </a>
+                        <a href= "https://www.instagram.com/structunb/"> <img className="struct__social__link" id="instagram" src={instagram} alt="instagram" /> </a>
+                        <a href="https://www.facebook.com/StructUnB"> <img className="struct__social__link" id="facebook" src={facebook} alt="facebook" /> </a>
                     </div>
                     </div>
             </footer>    

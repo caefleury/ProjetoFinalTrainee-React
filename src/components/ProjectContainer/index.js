@@ -15,7 +15,7 @@ const ProjectContainer = ({projects}) => {
         onSwiper={(swiper) => console.log(swiper)}>
             {projects.map((item,index)=>(
                 <SwiperSlide className="swiper-slide">
-                        <ProjectCard projects={projects} key={index} name={item.name} image_url={item.photo_url} 
+                        <ProjectCard projects={projects} key={index} name={item.name} image_url={item.photo_url} project_url={item.link} 
                         project_description={item.description} project_link={item.link} membersInProject={item.membersInProject}/>
                 </SwiperSlide>
             ))} 
