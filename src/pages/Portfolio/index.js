@@ -14,9 +14,7 @@ const Portfolio = () => {
     //<ProjectContainer projects={projects} />
     //{console.log(projects)}
     return(
-        <>
-            <ProjectContainer projects={projects}/>
-        </>
+        <ProjectContainer projects={projects}/>
     );
 }
 
