@@ -3,14 +3,14 @@ import garotabalanco from '../../assets/garotabalanco.png'
 import garotopc from '../../assets/garotopc.png'
 import garotabike from '../../assets/garotabike.png'
 
-const Services = () =>{
+const ServicesContainer = () =>{
     return(
         <Container>
             
             <div className="services__container">
                 <div className="title__container">
                     <p className="subtitle">Nossos</p>
-                    <p className="title">{"{ Serviços }"}</p>
+                    <span className="blue__braces">{"{ "}</span><span className="title">Serviços</span><span className="blue__braces">{" }"}</span>
                 </div>
                 <div className="service_container" id="websites__container">
                     <div className="rectangle"></div>
@@ -41,4 +41,4 @@ const Services = () =>{
     )
 }
 
-export default Services
+export default ServicesContainer

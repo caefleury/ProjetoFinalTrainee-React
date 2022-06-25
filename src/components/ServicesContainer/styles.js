@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 font-family: 'Nunito', sans-serif;
-height: 62.5rem;
+height: 54.5rem;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -23,6 +23,13 @@ padding-top:100px;
     margin: 0px;
     padding: 0px;
 }
+.blue__braces{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 7.313rem;
+    color:#2690FD;
+}
 .subtitle{
     font-style: normal;
     font-weight: 300;
@@ -35,9 +42,9 @@ padding-top:100px;
 .services__container {
     position:relative;
     display: grid;
-    grid-template-columns: repeat(2, 431px [col-start]);
+    grid-template-columns: repeat(2, 450px [col-start]);
     grid-template-rows: repeat(2, 250px [row-start]);
-    grid-column-gap: 230px;
+    grid-column-gap: 245px;
     grid-row-gap: 120px;  
 }
     
@@ -151,6 +158,70 @@ img{
         position: absolute;
         width: 420px;
         height: 240px;
+        border: 1px solid #F3F1EF;
+        border-radius: 20px;
+        filter: drop-shadow(-4px 4px 6px rgba(243, 241, 239, 0.63));
+    }
+    img{
+        height:200px;
+        width:auto;
+    }
+}
+@media screen and (max-width: 800px){
+    height: 55.5rem;
+    h2{
+        margin-left:20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        margin-bottom:0;
+    }
+    img{
+        height:180px;
+        width:auto;
+    }
+    .text__content{
+        max-width:200px;
+        margin-left:25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        color: #54BBFE;
+    }
+    .title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 100px;
+    }
+    .subtitle{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 10px;
+        margin: 0px;
+        padding: 0px;
+        margin-left:10px
+    }
+    .services__container {
+        position:relative;
+        display: grid;
+        grid-template-columns: repeat(2, 400px [col-start]);
+        grid-template-rows: repeat(2, 250px [row-start]);
+        grid-column-gap: 80px;
+        grid-row-gap: 100px;  
+    }
+    .service_container{
+        display:flex;
+        justify-content:flex-start;
+        width: 300px;
+        height: 340px;
+    }
+    .rectangle{
+        position: absolute;
+        width: 400px;
+        height: 220px;
         border: 1px solid #F3F1EF;
         border-radius: 20px;
         filter: drop-shadow(-4px 4px 6px rgba(243, 241, 239, 0.63));

@@ -4,13 +4,13 @@ import foguetinho from '../../assets/foguetinho.png'
 const Home = () => {
     return(
         <Container>
-            <div class="home__container">
-                <div class="text__container">
-                    <div class="title__foguetinho">
-                        <h1 class="title">{"{struct}"}</h1>
+            <div className="home__container">
+                <div className="text__container">
+                    <div className="title__foguetinho">
+                        <h1 className="title">{"{struct}"}</h1>
                         <img id='foguetinho__img' src={foguetinho} alt='foguetinho'/>
                     </div>
-                    <p class="subtitle">
+                    <p className="subtitle">
                         Empresa júnior especializada em desenvolvimento web. Atuando no
                         mercado desde 2014.
                     </p>
