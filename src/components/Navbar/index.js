@@ -21,10 +21,10 @@ const Navbar = () => {
                         <Link to="/sobre" className="navbar__link" onClick={() => {window.location.href="/sobre"}}>Sobre</Link>
                     </li>
                 </ul>
-                <div className="navbar__btn__container">
-                    <Link to="/contato" id="navbar__btn">CONTATO</Link>
+                <Link to="/contato" className="navbar__btn__container">
+                    <div id="navbar__btn">CONTATO</div>
                     <img className='arrow__img' src={rightarrow} alt='rightarrow'/>
-                </div>
+                </Link>
                 </nav>    
         </Container>
     )

@@ -1,5 +1,3 @@
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
 import {useState, useEffect} from 'react'
 import { api } from '../../services/api';
 import "swiper/css"
@@ -17,9 +15,7 @@ const Portfolio = () => {
     //{console.log(projects)}
     return(
         <>
-            <Navbar/>
             <ProjectContainer projects={projects}/>
-            <Footer/>
         </>
     );
 }
