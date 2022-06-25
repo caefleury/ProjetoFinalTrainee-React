@@ -15,6 +15,12 @@ const Navbar = () => {
                         <Link to="/" className="navbar__link" onClick={() => {window.location.href="/"}} >Home</Link>
                     </li>
                     <li className="navbar__item">
+                        <Link to="/" className="navbar__link" onClick={() => {window.location.href="/"}} >Serviços</Link>
+                    </li>
+                    <li className="navbar__item">
+                        <Link to="/" className="navbar__link" onClick={() => {window.location.href="/"}} >Parceiros</Link>
+                    </li>
+                    <li className="navbar__item">
                         <Link to="/portfolio" className="navbar__link" onClick={() => {window.location.href="/portfolio"}}>Portfolio</Link>
                     </li>
                     <li className="navbar__item">
