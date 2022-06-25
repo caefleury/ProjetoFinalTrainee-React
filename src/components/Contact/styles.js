@@ -12,38 +12,23 @@ export const Container = styled.div`{
     margin-top: 6.25rem;
     }
     .title,.subtitle{
-        margin: 0;
+        margin: 1rem 2rem;
     }
     .molding{
-        width: 1000px;
-        height: 1000px;
-	    border:8px inset rgba(56, 120, 159, 1);
-	    padding:15px;
+        width: 62.5rem;
+        height: 62.5rem;
+	    border: 1.63rem solid rgba(56, 120, 159, 1);
+	    padding: 0.938rem;
 	    background: transparent;
     }
-    @media screen and (max-width: 1200px){
-        .title{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 3rem;
-            line-height: 7rem;
-        }
-
-        .text__container1{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.4rem;
-            line-height: 2.5rem;
-            width: 45rem;
-            text-align: justify;
-        }
-        .text__container2{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.4rem;
-            line-height: 2.5rem;
-            width: 44rem;
-            text-align: justify;
-        }
+    .input_name{
+        max-width: 50rem;
+        height: 5rem;
+        width: 100%;
+        background: transparent;
+        border: 0.2rem solid gray;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
     }
 }`

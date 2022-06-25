@@ -8,40 +8,33 @@ const Contact = () => {
                     <h1 class="title">CONTATO</h1>
                 </div>
                 <div class="molding">
-
-                <div class="name">
-                    <p class="title_name">NOME COMPLETO:</p>
+                    <div class="name">
+                        <p class="title_name">NOME COMPLETO:</p>
+                        <input type="text" class="input_name" placeholder='Bob Esponja'/>
+                    </div>
+                    <div class="email">
+                        <p class="email_name">E-MAIL:</p>
+                        <input type="text" class="input_name" placeholder='exemplo@email.com'/>
+                    </div>
+                    <div class="cellphone">
+                        <p class="cellphone_name">TELEFONE:</p>
+                        <input type="text" class="input_name" placeholder='(61)99999-9999'/>
+                    </div>
+                    <div class="date_finished">
+                        <p class="date_finished_name">DATA PREVISTA DE FINALIZAÇÃO:</p>
+                        <input type="date" class="input_name"/>
+                    </div>
+                    <div class="service_type">
+                        <p class="service_type_name">TIPO DE SERVIÇO:</p>
+                    </div>
+                    <div class="description">
+                        <p class="description_name">DESCRIÇÃO:</p>
+                        <input type="text" class="input_name"/>
+                    </div>
+                    <div class="value">
+                        <p class="value_name">VERBA:</p>
+                    </div>
                 </div>
-                <div class="email">
-                    <p class="email_name">E-MAIL:</p>
-                </div>
-                <div class="cellphone">
-                    <p class="cellphone_name">TELEFONE:</p>
-                </div>
-                <div class="date_finished">
-                    <p class="date_finished_name">DATA PREVISTA DE FINALIZAÇÃO:</p>
-                </div>
-                <div class="service_type">
-                    <p class="service_type_name">TIPO DE SERVIÇO:</p>
-                </div>
-                <div class="description">
-                    <p class="description_name">DESCRIÇÃO:</p>
-                </div>
-                <div class="value">
-                    <p class="value_name">VERBA:</p>
-                </div>
-
-                </div>
-                <p class="text__container1">
-                    Olá
-                    <br />
-                    <br />
-                    Teste
-                    <br />
-                    <br />
-                    Teste2
-                </p>
-
             </div>
         </Container>
     )
