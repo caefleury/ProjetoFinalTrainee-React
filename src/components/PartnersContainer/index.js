@@ -11,7 +11,7 @@ const PartnersContainer = ({partners}) => {
                 </div>
                 <div className='partners__content'>
                     {partners.map((item,index)=>(
-                    <PartnerCard key={index} image_url={item.photo_url} />
+                    <PartnerCard key={index} image_url={item.photo_url} partner_url={item.link} />
                     ))}
                 </div>            
             </div>

@@ -4,7 +4,6 @@ import ProjectMemberCard from '../ProjectMemberCard/index.js'
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({image_url,name,project_description,link,membersInProject,project_url}) =>{
-    // arrumar link da imagem!
     return(
         <Container>
             <div className="project__container">
