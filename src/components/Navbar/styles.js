@@ -9,6 +9,9 @@ export const Container = styled.div`
     top: 0;
     z-index:2;
     backdrop-filter: blur(4px);
+    .cta{
+        display:flex;
+    }
     .logo{
         height: 42px;
         font-style: normal;
@@ -47,7 +50,9 @@ export const Container = styled.div`
         align-items: center;
         border-radius: 10px;
         height: 50px;
+        
     }
+    
     .navbar__menu {
         display: flex;
         justify-content: space-around;
@@ -62,9 +67,9 @@ export const Container = styled.div`
         padding: 2px 15px;
         background-color: white;
         display: flex;
-        justify-content: space-;
         align-items: center;
         border-radius: 20px;
+        filter: url('#goo');
     }
     #navbar__btn{
         color: #111827;

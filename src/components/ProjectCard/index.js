@@ -20,7 +20,7 @@ const ProjectCard = ({image_url,name,project_description,link,membersInProject,p
                     </div>
                 </div>
             </div>
-            <p className='members__title'>Membros</p>
+            <p className='members__title'>Membros Envolvidos</p>
             <div className='projectmembers__container'>
                 {membersInProject.map((item,index)=>(
                     <ProjectMemberCard key={index} name={item.name} image_url={item.photo_url} project_role={item.project_role}/>
