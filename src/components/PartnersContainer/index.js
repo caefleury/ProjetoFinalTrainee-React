@@ -18,11 +18,13 @@ const PartnersContainer = ({partners}) => {
                 </div>
                 <div className='partners__content'>
                     {partners.map((item,index)=>(
-                        <PartnerCard key={index} image_url={item.photo_url}>
-                            <button type="button" onClick={() => {deletePartner(item.id)}}> Apagar </button>
-                            <Link to="/PartnersCreate" className="navbar__link" onClick={() => {window.location.href="/ParnersCreate"}}>Partners</Link>
-                            <Link to={`/PartnersUpdate/${item.id}`} >PartnersUpdate</Link>
-                        </PartnerCard>
+                        <div className='button-box'>
+                            <PartnerCard key={index} image_url={item.photo_url}>
+                                <Link to="/PartnersCreate" className="navbar__link" onClick={() => {window.location.href="/ParnersCreate"}}>Partners</Link>
+                                <Link to={`/PartnersUpdate/${item.id}`} >PartnersUpdate</Link>
+                            </PartnerCard>
+                            <button className='butão' type="button" onClick={() => {deletePartner(item.id)}}> Apagar </button>
+                        </div>
                     ))}
                 </div>            
             </div>

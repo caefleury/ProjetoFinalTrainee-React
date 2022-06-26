@@ -48,4 +48,15 @@ color:white;
     padding: 0px;
     margin-left:10px
 }
+
+.button-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+.butão{
+    width: 4.5rem;
+    
+}
 `
