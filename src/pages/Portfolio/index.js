@@ -3,6 +3,7 @@ import { api } from '../../services/api';
 import "swiper/css"
 import ProjectContainer from '../../components/ProjectContainer';
 
+    
 const Portfolio = () => {
     const [projects, setProjects] = useState([])
 
@@ -14,8 +15,9 @@ const Portfolio = () => {
     //<ProjectContainer projects={projects} />
     //{console.log(projects)}
     return(
-        <ProjectContainer projects={projects}/>
-    );
-}
-
-export default Portfolio
+        <ProjectContainer projects={projects} setProjects = {setProjects}/>
+    
+        );
+    }
+    
+    export default Portfolio
