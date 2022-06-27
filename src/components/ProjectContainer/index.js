@@ -2,7 +2,23 @@ import ProjectCard from '../ProjectCard/index.js'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { EffectFade, Navigation } from 'swiper';
 import "swiper/css"
-const ProjectContainer = ({projects}) => {
+import { api } from '../../services/api.js';
+import { Link } from "react-router-dom";
+import { Container } from './styles';
+
+
+const ProjectContainer = ({projects, setProjects}) => {
+
+    const deleteProject = (id) => {
+            api.delete(`projects/delete/${id}`)
+            .then((response) => {
+                alert(`porjeto deletado`) 
+                setProjects(projects.filter(p => p.id !== id))
+        
+            })
+            }
+            
+        
 
     return(
         <Swiper 
@@ -17,6 +33,12 @@ const ProjectContainer = ({projects}) => {
                 <SwiperSlide className="swiper-slide">
                         <ProjectCard projects={projects} key={index} name={item.name} image_url={item.photo_url} project_url={item.link} 
                         project_description={item.description} project_link={item.link} membersInProject={item.membersInProject}/>
+                        <Container>
+                        <button type="button" onClick={() => {deleteProject(item.id)}}> Apagar </button>
+                         <Link to="/PortfolioCreate">cria</Link>
+                         <Link to={`/PortfolioUpdate/${item.id}`} >Editar</Link>
+                         <Link to={`/PortfolioPhoto/${item.id}`} >Add Foto</Link>
+                         </Container>
                 </SwiperSlide>
             ))} 
         </Swiper>
