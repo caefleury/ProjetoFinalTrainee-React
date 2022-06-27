@@ -13,7 +13,11 @@ const ProjectCard = ({image_url,name,project_description,link,membersInProject,p
         const ProjectMember = [member_id, project_id]
         console.log(ProjectMember)
         await api.delete(`projects/removeMemberFromProject/${member_id}/${project_id}`)
+        setMembers(members.filter(p => p.member_id !== member_id))
+        console.log(members)
     }
+
+    const [members,setMembers] = useState(membersInProject)
 
     return(
         <Container user={Object.keys(user).length !== 0}>
@@ -32,7 +36,7 @@ const ProjectCard = ({image_url,name,project_description,link,membersInProject,p
             </div>
             <p className='members__title'>Membros Envolvidos</p>
             <div className='projectmembers__container'>
-                {membersInProject.map((member,index)=>(
+                {members.map((member,index)=>(
                     <div>
                     <ProjectMemberCard key={index} name={member.name} image_url={member.photo_url} project_role={member.project_role} member_id={member.member_id}/>
                     <button className='butão' type="button" onClick={() => {removeMemberFromProject(member.member_id)}}> Apagar </button>
