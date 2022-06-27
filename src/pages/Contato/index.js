@@ -1,9 +1,9 @@
-import Home from '../../components/Home';
+import Contact from '../../components/Contact';
 
 
 const Contato = () =>{
     return(
-        <Home/>
+        <Contact/>
     )
 }
 

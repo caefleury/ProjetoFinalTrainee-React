@@ -8,4 +8,5 @@ export const Container = styled.div`
     justify-content: space-between;
     color: #8d8fa1;
     display: ${(props)=> props.user? 'flex' : 'none'};
+    margin-bottom: 10px;
 `
