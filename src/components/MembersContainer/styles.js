@@ -32,4 +32,16 @@ margin-top:80px;
     }
     .member
 }
+.BotaoMembroFoto {
+    display: ${(props)=> props.user? 'flex' : 'none'};
+}
+.BotaoMembroCreate {
+    display: ${(props)=> props.user? 'flex' : 'none'};
+}
+.BotaoMembroUpdate {
+    display: ${(props)=> props.user? 'flex' : 'none'};
+}
+.BotaoMembroDelete {
+    display: ${(props)=> props.user? 'flex' : 'none'};
+}
 `

@@ -9,6 +9,9 @@ import PortfolioUpdate from "../pages/PortfolioUpdate";
 import PortfolioPhoto from "../pages/PortfolioPhoto";
 import PartnersCreate from "../pages/PartnersCreate"
 import PartnersUpdate from "../pages/PartnersUpdate";
+import MemberCreate from "../pages/MemberCreate";
+import MemberPhoto from "../pages/MemberPhoto";
+import MemberUpdate from "../pages/MemberUpdate";
 
 const MyRoutes = () => {
     return (
@@ -23,6 +26,9 @@ const MyRoutes = () => {
             <Route path="/sobre" element={<Sobre/>}/>
             <Route path="/contato" element={<Contato/>}/>
             <Route path="/login" element={<LoginPage/>}/>
+            <Route path="/MemberCreate" element={<MemberCreate/>}/>
+            <Route path="/MemberPhoto/:id" element={<MemberPhoto/>}/>
+            <Route path="/MemberUpdate/:id" element={<MemberUpdate/>}/>
         </Routes>
     )
 }

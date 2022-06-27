@@ -57,6 +57,6 @@ color:white;
 }
 .butão{
     width: 4.5rem;
-    
+    display: ${(props)=>props.user? "flex" : "none"};
 }
 `

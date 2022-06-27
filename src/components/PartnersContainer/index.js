@@ -2,15 +2,18 @@ import PartnerCard from '../PartnerCard/index.js'
 import {Container} from './styles.js'
 import { api } from '../../services/api.js';
 import { Link } from "react-router-dom";
+import { useUserContext } from '../../context/useUserContext.js';
 
 const PartnersContainer = ({partners}) => {
+
+    const {user} = useUserContext()
 
     const deletePartner = (id) => {
             api.delete(`partners/delete/${id}`)
             .then((response) => alert(`parceiro deletado`))
             }
     return(
-        <Container id="PartnerPage">
+        <Container id="PartnerPage" user={Object.keys(user).length !== 0}>
             <div className='partners__container'>
                 <div className="title__container">
                     <p className="subtitle">Nossos</p>

@@ -31,7 +31,7 @@ const PortfolioCreate = () =>{
         <input placeholder = 'Nome do projeto' onChange={(event) => setName(event.target.value)}></input>
         <input placeholder = ' Descrição' onChange={(event) => setDescription(event.target.value)}></input>
         <input placeholder = 'link' onChange={(event) => setLink(event.target.value)}></input>
-        <button type ='submit'>cria</button>
+        <button type ='submit'>Criar</button>
     </form>
 </Container1>
 

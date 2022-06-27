@@ -21,9 +21,9 @@ const ProjectContainer = ({projects, setProjects}) => {
         
             })
             }
-        useEffect(() => {
-            console.log(user)
-        },[])
+    useEffect(() => {
+        console.log(user)
+    },[])
         
 
     return(
@@ -39,7 +39,7 @@ const ProjectContainer = ({projects, setProjects}) => {
                 <SwiperSlide className="swiper-slide">
                         <ProjectCard projects={projects} key={index} name={item.name} image_url={item.photo_url} project_url={item.link} 
                         project_description={item.description} project_link={item.link} membersInProject={item.membersInProject}/>
-                        <Container user={user}>
+                        <Container user={Object.keys(user).length !== 0}>
                             <button type="button" onClick={() => {deleteProject(item.id)}}> Apagar </button>
                             <Link to="/PortfolioCreate">Criar</Link>
                             <Link to={`/PortfolioUpdate/${item.id}`} >Editar</Link>
