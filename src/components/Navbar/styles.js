@@ -69,7 +69,6 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         border-radius: 20px;
-        filter: url('#goo');
     }
     #navbar__btn{
         color: #111827;

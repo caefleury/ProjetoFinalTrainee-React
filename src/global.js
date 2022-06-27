@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
    display: none;
    }
 body{
+   background-repeat: no-repeat;
    font-family: 'Nunito', sans-serif;
    background: linear-gradient(180deg, rgba(5,0,20,1) 37%, rgba(56,103,161,1) 100%) ;
    margin:0;

@@ -12,6 +12,7 @@ import PartnersUpdate from "../pages/PartnersUpdate";
 import MemberCreate from "../pages/MemberCreate";
 import MemberPhoto from "../pages/MemberPhoto";
 import MemberUpdate from "../pages/MemberUpdate";
+import MemberAdd from "../pages/MemberAdd"
 
 const MyRoutes = () => {
     return (
@@ -29,6 +30,7 @@ const MyRoutes = () => {
             <Route path="/MemberCreate" element={<MemberCreate/>}/>
             <Route path="/MemberPhoto/:id" element={<MemberPhoto/>}/>
             <Route path="/MemberUpdate/:id" element={<MemberUpdate/>}/>
+            <Route path="/MemberAdd/:id" element={<MemberAdd/>}/>
         </Routes>
     )
 }
