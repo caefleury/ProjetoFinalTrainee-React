@@ -36,7 +36,7 @@ const Navbar = () => {
                 </Link>
 
             </nav>    
-                    { !!user ? <div onClick={() => logout()}><FiLogOut/></div> : <h4>Opa</h4> }
+                    { Object.keys(user).length ? <div onClick={() => logout()}><FiLogOut/></div> : <h4></h4> }
         </Container>
     )
 };
