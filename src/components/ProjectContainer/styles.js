@@ -10,5 +10,8 @@ export const Container = styled.div`s
     color: #8d8fa1;
     
     }
+    button {
+        display: ${(props)=>props.user? "flex" : "none"}
 
+    }
 `

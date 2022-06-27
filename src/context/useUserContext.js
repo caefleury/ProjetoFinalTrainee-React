@@ -5,7 +5,7 @@ import { api } from "../services/api";
 const UserContext = createContext({}); 
 
 const UserProvider = ({children}) => {
-    const [user, setUser] = useState(undefined);
+    const [user, setUser] = useState({});
 
     const login = async (email, password) => {
         try{
@@ -13,8 +13,8 @@ const UserProvider = ({children}) => {
             
             if(response.data){
                 setUser(response.data)
-                api.defaults.headers.common['X-Admin-Email'] = response.data.email
-                api.defaults.headers.common['X-Admin-Token'] = response.data.authentication_token
+                api.defaults.headers.common["X-Admin-Token"] = response.data.authentication_token
+                api.defaults.headers.common["X-Admin-Email"] = response.data.email
                 Cookie.set('struct.user', JSON.stringify(response.data), {expires: 1})
                 alert("Usuário logado!")
             }
@@ -25,7 +25,10 @@ const UserProvider = ({children}) => {
     useEffect(() => {
         const retrievedUser = Cookie.get('struct.user');
         if(retrievedUser){
-            setUser(JSON.parse(retrievedUser))
+            let parsedUser = JSON.parse(retrievedUser)
+            setUser(parsedUser)
+            api.defaults.headers.common["X-Admin-Token"] = parsedUser.authentication_token
+            api.defaults.headers.common["X-Admin-Email"] = parsedUser.email
         }
     }, [])
     return (
