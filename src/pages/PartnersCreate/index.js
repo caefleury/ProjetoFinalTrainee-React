@@ -23,7 +23,7 @@ const PartnersCreate = () =>{
     <h1>aaaaaaaaaaaa</h1>
     <form onSubmit={partnersCreate}>
         <input placeholder='Nome' onChange={(event) => setName(event.target.value)}></input>
-        <button type="submit">cria</button>
+        <button type="submit">Criar</button>
     </form>
 </Container1>
 
