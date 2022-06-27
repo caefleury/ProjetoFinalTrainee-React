@@ -17,6 +17,7 @@ export const Container = styled.div`
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
+        display:flex
     }
     ul {
         list-style-type: none;
@@ -46,18 +47,20 @@ export const Container = styled.div`
         width: 100%;
         padding: 0 50px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         border-radius: 10px;
         height: 50px;
+
         
     }
     
     .navbar__menu {
-        display: flex;
-        justify-content: space-around;
-        font-weight: 300;
-        width: 30%;
+        display: fixed;
+        justify-content: space-between;
+        font-weight: 300px;
+        width: 50%;
+        
     }
     .navbar__item {
         list-style-type: none;
@@ -69,7 +72,7 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         border-radius: 20px;
-        filter: url('#goo');
+        
     }
     #navbar__btn{
         color: #111827;
@@ -81,4 +84,44 @@ export const Container = styled.div`
         width: 26px;
         margin-left:5px
     }
+    
+
+@media (max-width: 800px) {
+    body {
+        overflow-x: hidden
+    }
+    .navbar__menu{
+      position: fixed;
+      margin: auto;
+      top: 1px;
+      //right: 0;
+      left:2;
+      width: 50vw;
+      height: 92vh;
+      background: black;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      display: ${(props)=> props.openNav? 'flex' : 'none'};
+    }
+
+    .navbar__btn__container{
+        margin-right: 200px;
+    }
+}
+
+
+.mobile-nav {
+    font-size: 24px;
+    display:none;
+    z-index: 10;
+    cursor: pointer;
+    @media (max-width:800px ){
+        display:block
+    }
+
+}
+
 `

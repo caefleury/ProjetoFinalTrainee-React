@@ -3,14 +3,20 @@ import { Link } from 'react-router-dom';
 import rightarrow from '../../assets/rightarrow.png'
 import { useUserContext } from '../../context/useUserContext.js';
 import { FiLogOut } from 'react-icons/fi'
+import { AiOutlineMenu } from 'react-icons/ai';
+import { useState } from 'react';
 
 const Navbar = () => {
-    const struct = "{ STRUCT }"
-    const { user, logout } = useUserContext()
 
+   const [isMobile, setisMobile ] = useState (false)
+
+    const struct = "{ STRUCT }"
+    
+    const { user, logout } = useUserContext()
+    
     return(
         //<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Stockio - Flaticon</a>-->
-        <Container>
+        <Container openNav={isMobile}>
             <nav className="navbar__container">
                 <Link className="logo" to="/"  onClick={() => {window.location.href="/"}}>{struct}</Link>
                 <ul className="navbar__menu">
@@ -31,9 +37,10 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <Link to="/contato" className="navbar__btn__container">
-                    <div id="navbar__btn">CONTATO</div>
+                    <div className="contato"id="navbar__btn">CONTATO</div>
                     <img className='arrow__img' src={rightarrow} alt='rightarrow'/>
                 </Link>
+            <div className='mobile-nav' onClick={() => setisMobile(!isMobile)}><AiOutlineMenu/> </div>
 
             </nav>    
                     { Object.keys(user).length ? <div onClick={() => logout()}><FiLogOut/></div> : <h4></h4> }

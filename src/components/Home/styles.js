@@ -16,6 +16,7 @@ export const Container = styled.div`
         align-items: center;
         flex-direction: column;
         color: white;
+        width:100%
     }
     .text__container{
         margin-top:6.25rem;
