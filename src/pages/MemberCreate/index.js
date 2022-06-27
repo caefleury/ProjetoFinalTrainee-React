@@ -5,7 +5,7 @@ import { api } from "../../services/api.js"
 const MemberCreate = () =>{
 
     const [name, setName] = useState('')
-    const [role_id, setDescription] = useState('')
+    const [role_id, setRoleId] = useState('')
 
     const memberCreate = async (e) => {
         e.preventDefault()
@@ -27,7 +27,7 @@ const MemberCreate = () =>{
     <h1>Adicionar novo membro</h1>
     <form onSubmit={memberCreate}>
         <input placeholder = 'Nome do membro' onChange={(event) => setName(event.target.value)}></input>
-        <input placeholder = 'Cargo' onChange={(event) => setDescription(event.target.value)}></input>
+        <input placeholder = 'Cargo' onChange={(event) => setRoleId(event.target.value)}></input>
         <button type ='submit'>Criar</button>
     </form>
 </Container1>

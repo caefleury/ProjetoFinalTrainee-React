@@ -24,7 +24,7 @@ const Sobre = () => {
             <About/>
             <Stats/>
             <MVV/>
-            <MembersContainer members={members}/>
+            <MembersContainer members={members} setMembers = {setMembers}/>
         </>
     );
 }

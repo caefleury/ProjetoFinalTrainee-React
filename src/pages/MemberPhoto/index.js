@@ -30,10 +30,10 @@ const MemberAddPhoto = () => {
 
     return(
 <Container1>
-    <h1>Adicionar imagem a {name}</h1>
+    <h1>Trocar imagem a {name}</h1>
     <form onSubmit={addPhoto}>
         <input placeholder='file' type='file' onChange={(event) => setPhoto(event.target.files)}></input>
-       <button type="submit">Adicionar</button>
+       <button type="submit">Trocar</button>
     </form>
 </Container1>
 
