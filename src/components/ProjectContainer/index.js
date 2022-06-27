@@ -37,13 +37,14 @@ const ProjectContainer = ({projects, setProjects}) => {
         onSwiper={(swiper) => console.log(swiper)}>
             {projects.map((item,index)=>(
                 <SwiperSlide className="swiper-slide">
-                        <ProjectCard projects={projects} key={index} name={item.name} image_url={item.photo_url} project_url={item.link} 
+                        <ProjectCard project_id={item.id} projects={projects} key={index} name={item.name} image_url={item.photo_url} project_url={item.link} 
                         project_description={item.description} project_link={item.link} membersInProject={item.membersInProject}/>
                         <Container user={Object.keys(user).length !== 0}>
                             <button type="button" onClick={() => {deleteProject(item.id)}}> Apagar </button>
                             <Link to="/PortfolioCreate">Criar</Link>
                             <Link to={`/PortfolioUpdate/${item.id}`} >Editar</Link>
                             <Link to={`/PortfolioPhoto/${item.id}`} >Add Foto</Link>
+                            <Link to={`/MemberAdd/${item.id}`} >Add Membro</Link>
                         </Container>
                 </SwiperSlide>
             ))} 

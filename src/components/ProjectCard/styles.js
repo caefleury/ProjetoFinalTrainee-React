@@ -78,4 +78,7 @@ margin-top:300px;
         margin:0;
     }
 }
+.butão {
+    display: ${(props)=> props.user? 'flex' : 'none'};
+}
 `
