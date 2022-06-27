@@ -21,9 +21,9 @@ const ProjectContainer = ({projects, setProjects}) => {
         
             })
             }
-        useEffect(() => {
-            console.log(user)
-        },[])
+    useEffect(() => {
+        console.log(user)
+    },[])
         
 
     return(
