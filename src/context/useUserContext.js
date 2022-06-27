@@ -22,6 +22,8 @@ const UserProvider = ({children}) => {
             alert(e);
         }
     }
+
+    
     useEffect(() => {
         const retrievedUser = Cookie.get('struct.user');
         if(retrievedUser){
@@ -31,8 +33,16 @@ const UserProvider = ({children}) => {
             api.defaults.headers.common["X-Admin-Email"] = parsedUser.email
         }
     }, [])
+
+    const logout = async () => {
+        if(window.confirm("Tem certeza que deseja sair da sua conta?")){
+            setUser(undefined);
+            Cookie.remove('struct.user');
+        }
+    }
+
     return (
-        <UserContext.Provider value={{login, user}}>
+        <UserContext.Provider value={{login, user, logout}}>
             {children}
         </UserContext.Provider>
     )

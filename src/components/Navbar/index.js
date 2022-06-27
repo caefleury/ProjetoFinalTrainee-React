@@ -1,9 +1,12 @@
 import {Container} from './styles.js'
 import { Link } from 'react-router-dom';
 import rightarrow from '../../assets/rightarrow.png'
+import { useUserContext } from '../../context/useUserContext.js';
+import { FiLogOut } from 'react-icons/fi'
 
 const Navbar = () => {
     const struct = "{ STRUCT }"
+    const { user, logout } = useUserContext()
 
     return(
         //<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Stockio - Flaticon</a>-->
@@ -31,7 +34,9 @@ const Navbar = () => {
                     <div id="navbar__btn">CONTATO</div>
                     <img className='arrow__img' src={rightarrow} alt='rightarrow'/>
                 </Link>
-                </nav>    
+
+            </nav>    
+                    { !!user ? <div onClick={() => logout()}><FiLogOut/></div> : <h4>Opa</h4> }
         </Container>
     )
 };
