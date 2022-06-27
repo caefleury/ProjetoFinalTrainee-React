@@ -36,7 +36,7 @@ const UserProvider = ({children}) => {
 
     const logout = async () => {
         if(window.confirm("Tem certeza que deseja sair da sua conta?")){
-            setUser(undefined);
+            setUser({});
             Cookie.remove('struct.user');
         }
     }
