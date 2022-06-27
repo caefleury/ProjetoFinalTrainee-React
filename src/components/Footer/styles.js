@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const Container = styled.div`{
     footer{
-        margin-top:50px;
+        margin-top:40px;
         font-weight: 400;
         display: flex;
         align-items:center;
